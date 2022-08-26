@@ -10,7 +10,7 @@ jobs:
           name: Install linux dependencies - libusb
           command: |
             sudo apt update -q
-            sudo apt install -yq libusb-dev libusb-1.0.0-dev
+            sudo apt install -yq libusb-dev
       - run:
           name: Test
           command: |
@@ -27,7 +27,7 @@ jobs:
           name: Install linux dependencies - libusb
           command: |
             sudo apt update -q
-            sudo apt install -yq libusb-dev libusb-1.0.0-dev
+            sudo apt install -yq libusb-dev
       - run:
           name: Test
           command: |
@@ -57,7 +57,7 @@ jobs:
           name: Install libusb
           command: |
             sudo apt update -q
-            sudo apt install -yq libusb-dev libusb-1.0.0-dev
+            sudo apt install -yq libusb-dev
       - run:
           name: Make distributables
           command: |
