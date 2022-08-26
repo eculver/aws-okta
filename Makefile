@@ -29,10 +29,6 @@ dist/aws-okta-$(VERSION)-linux-amd64: | dist/
 	GOOS=linux GOARCH=amd64 go build $(LDFLAGS) -o $@
 
 dist/aws-okta-$(VERSION).exe: | dist/
-	go mod vendor
-	go get -u ./...
-	go get github.com/nomad-software/vend
-	vend
 	GOOS=windows GOARCH=amd64 go build $(LDFLAGS) -o dist/aws-okta.exe
 
 .PHONY: clean all
