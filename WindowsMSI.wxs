@@ -4,7 +4,7 @@
 <?define Manufacturer = "Segment" ?>
 <?define Version = "${VERSION}" ?>
 <?define Description = "Installer for the aws-okta commandline tool" ?>
-<?define Comments = "See project repo at https://github.com/segmentio/aws-okta" ?>
+<?define Comments = "See project repo at https://github.com/eculver/aws-okta" ?>
 
 <Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
     <Product 

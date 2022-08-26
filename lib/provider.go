@@ -7,7 +7,7 @@ import (
 
 	"errors"
 
-	"github.com/segmentio/aws-okta/sessioncache"
+	"github.com/eculver/aws-okta/sessioncache"
 	"github.com/aws/aws-sdk-go/aws/endpoints"
 	log "github.com/sirupsen/logrus"
 

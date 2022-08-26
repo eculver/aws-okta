@@ -1,4 +1,4 @@
-module github.com/segmentio/aws-okta
+module github.com/eculver/aws-okta
 
 go 1.18
 
