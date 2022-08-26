@@ -20,6 +20,7 @@ jobs:
   test:
     docker:
       - image: cimg/go:1.18
+    working_directory: /home/circleci/go/src/github.com/segmentio/aws-okta
     steps:
       - checkout
       - run:
@@ -45,6 +46,7 @@ jobs:
   dist-linux:
     docker:
       - image: cimg/go:1.18
+    working_directory: /home/circleci/go/src/github.com/segmentio/aws-okta
     steps:
       - checkout
       - run:
@@ -67,6 +69,7 @@ jobs:
   dist-windows:
     docker:
       - image: cimg/go:1.18
+    working_directory: /home/circleci/go/src/github.com/segmentio/aws-okta
     steps:
       - checkout
       - run: 
@@ -85,6 +88,7 @@ jobs:
   publish-packagecloud:
     docker:
       - image: cimg/go:1.18
+    working_directory: /home/circleci/go/src/github.com/segmentio/aws-okta
     steps:
       - checkout
       - attach_workspace: { at: . }
@@ -103,6 +107,7 @@ jobs:
   publish-github-linux:
     docker:
       - image: cimg/go:1.18
+    working_directory: /home/circleci/go/src/github.com/segmentio/aws-okta
     steps:
       - checkout
       - attach_workspace: { at: . }
@@ -115,6 +120,7 @@ jobs:
   publish-github-windows:
     docker:
       - image: cimg/go:1.18
+    working_directory: /home/circleci/go/src/github.com/segmentio/aws-okta
     steps:
       - checkout
       - attach_workspace: { at: . }
