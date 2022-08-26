@@ -3,7 +3,7 @@ jobs:
 
   test-build-golang-prev:
     docker:
-      - image: circleci/golang:1.12
+      - image: circleci/golang:1.17
     steps:
       - checkout
       - run:
@@ -19,7 +19,7 @@ jobs:
 
   test:
     docker:
-      - image: circleci/golang:1.13
+      - image: circleci/golang:1.18
     working_directory: /go/src/github.com/segmentio/aws-okta
     steps:
       - checkout
@@ -45,7 +45,7 @@ jobs:
 
   dist-linux:
     docker:
-      - image: circleci/golang:1.13
+      - image: circleci/golang:1.18
     working_directory: /go/src/github.com/segmentio/aws-okta
     steps:
       - checkout
@@ -68,7 +68,7 @@ jobs:
 
   dist-windows:
     docker:
-      - image: circleci/golang:1.13
+      - image: circleci/golang:1.18
     working_directory: /go/src/github.com/segmentio/aws-okta
     steps:
       - checkout
@@ -87,7 +87,7 @@ jobs:
 
   publish-packagecloud:
     docker:
-      - image: circleci/golang:1.13
+      - image: circleci/golang:1.18
     working_directory: /go/src/github.com/segmentio/aws-okta
     steps:
       - checkout
@@ -106,7 +106,7 @@ jobs:
 
   publish-github-linux:
     docker:
-      - image: circleci/golang:1.13
+      - image: circleci/golang:1.18
     working_directory: /go/src/github.com/segmentio/aws-okta
     steps:
       - checkout
@@ -119,7 +119,7 @@ jobs:
 
   publish-github-windows:
     docker:
-      - image: circleci/golang:1.13
+      - image: circleci/golang:1.18
     working_directory: /go/src/github.com/segmentio/aws-okta
     steps:
       - checkout
